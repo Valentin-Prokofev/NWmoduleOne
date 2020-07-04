@@ -5,13 +5,13 @@ let box = document.getElementById("box"),
     oneHeart = document.querySelector(".heart"),
     wrapper = document.querySelector(".wrapper");
 
-    box.style.backgroundColor = "blue";
+box.style.backgroundColor = "blue";
 
-    btn[1].style.borderRadius = "100%";
+btn[1].style.borderRadius = "100%";
 
-    circle[0].style.backgroundColor = "red";
-    circle[1].style.backgroundColor = "yellow";
-    circle[2].style.backgroundColor = "green";
+circle[0].style.backgroundColor = "red";
+circle[1].style.backgroundColor = "yellow";
+circle[2].style.backgroundColor = "green";
 
 // for (let i = 0; i <h1 heart.length; i++) {
 //     heart[i].style.backgroundColor = "blue";
@@ -24,20 +24,20 @@ let box = document.getElementById("box"),
 let div = document.createElement('div'),
     text = document.createTextNode("there were i am here");
 
-    // console.log(div);
-    // console.log(text);
+// console.log(div);
+// console.log(text);
 
-    div.classList.add('black');
+div.classList.add('black');
 
-    // document.body.appendChild(div);
-    // wrapper.appendChild(div);
+// document.body.appendChild(div);
+// wrapper.appendChild(div);
 
-    // div.innerHTML = "<h1>Hello World !</h1>";
+// div.innerHTML = "<h1>Hello World !</h1>";
 div.textContent = "Hello World !";
 document.body.insertBefore(div, circle[0]);
-document.body.removeChild(circle[1]);
+document.body.removeChild(circle[1]);+
 wrapper.removeChild(heart[1]);
 document.body.replaceChild(btn[1], circle[1]);
 
 
-    console.log(div);
+console.log(div);
