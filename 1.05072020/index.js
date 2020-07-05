@@ -47,3 +47,5 @@ const video = ["youtube", "vimeo", "rutube"],
      };
      
      const newObj = {...q};
+
+     alert("hello");
