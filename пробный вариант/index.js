@@ -1,43 +1,49 @@
-let box = document.getElementById("box"),
-    btn = document.getElementsByTagName("button"),
-    circle = document.getElementsByClassName("circle"),
-    heart = document.querySelectorAll(".heart"),
-    oneHeart = document.querySelector(".heart"),
-    wrapper = document.querySelector(".wrapper");
-
-box.style.backgroundColor = "blue";
-
-btn[1].style.borderRadius = "100%";
-
-circle[0].style.backgroundColor = "red";
-circle[1].style.backgroundColor = "yellow";
-circle[2].style.backgroundColor = "green";
-
-// for (let i = 0; i <h1 heart.length; i++) {
-//     heart[i].style.backgroundColor = "blue";
+// function copy(mainObj) {
+//     let objCopy = {};
+//     let key;
+//     for (key in mainObj) {
+//         objCopy[key] = mainObj[key];
+//     }
+//     return objCopy;
 // }
 
-// heart.forEach(function(item, i, hearts) {
-//     item.style.backgroundColor = 'blue';
-// });
+// const numbers = {
+//     a: 2,
+//     b: 3,
+//     c: {
+//         d:7,
+//         e:9
+//     }
+// };
 
-let div = document.createElement('div'),
-    text = document.createTextNode("there were i am here");
+// const newNumbers = copy(numbers);
 
-// console.log(div);
-// console.log(text);
+// newNumbers.a = 10;
+// console.log(newNumbers);
+// console.log(numbers);
 
-div.classList.add('black');
+const video = ["youtube", "vimeo", "rutube"],
+      blogs = ["wordpress", "livejournal", "blogger"],
+      internet = [...video, ...blogs, "vk", "facebook"];
 
-// document.body.appendChild(div);
-// wrapper.appendChild(div);
+      console.log(internet);
 
-// div.innerHTML = "<h1>Hello World !</h1>";
-div.textContent = "Hello World !";
-document.body.insertBefore(div, circle[0]);
-document.body.removeChild(circle[1]);+
-wrapper.removeChild(heart[1]);
-document.body.replaceChild(btn[1], circle[1]);
+      function log(a, b, c) {
+          console.log(a);
+          console.log(b);
+          console.log(c);
+      }
+       const num = [2, 5, 7];
+
+       log(...num);
+
+     const arr = ["a", "b"];
+     const newArr = [...arr];
 
 
-console.log(div);
+     const q = {
+         one: 1,
+         two: 2
+     };
+     
+     const newObj = {...q};
